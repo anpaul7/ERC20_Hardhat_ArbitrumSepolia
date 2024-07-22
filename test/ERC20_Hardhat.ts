@@ -1,9 +1,7 @@
-
 import { expect } from "chai";
 import { ethers } from "hardhat";
 
 describe("ERC20_HardHat", function () {
-
 
   it("Test contract", async function () {
     const ContractFactory = await ethers.getContractFactory("ERC20_HardHat");

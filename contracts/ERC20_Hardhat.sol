@@ -13,7 +13,7 @@ contract ERC20_HardHat is ERC20, ERC20Pausable, Ownable, ERC20Permit {
         Ownable(initialOwner)
         ERC20Permit("ERC20_HardHat")
     {
-        
+         _mint(msg.sender, 1 * (10 ** decimals()));
     }
 
     function pause() public onlyOwner {

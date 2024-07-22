@@ -1,7 +1,15 @@
+import { ethers, run } from 'hardhat'
+import { DeployFunction, DeployResult } from 'hardhat-deploy/dist/types';
+import { HardhatRuntimeEnvironment } from 'hardhat/types';
+import { developmentChains, networkConfig } from "../helper-hardhat-config";
+import verify from "../helper-functions";
+
+/**
 import { DeployFunction, DeployResult } from "hardhat-deploy/dist/types";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { developmentChains, networkConfig } from "../helper-hardhat-config";
-import verify from "../helper-functions";
+import verify from "../helper-functions.ts";
+ */
 
 const deploy_ERC20_HardHat: DeployFunction = async function (
   hre: HardhatRuntimeEnvironment
